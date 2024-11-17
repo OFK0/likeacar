@@ -2,11 +2,11 @@
   @apply py-16 sticky top-0 border-b border-neutral-50 bg-white z-10;
 
   &__inner {
-    @apply flex items-center justify-between container mx-auto flex-col;
+    @apply flex items-center justify-between container mx-auto flex-col md:flex-row;
   }
 
   &__nav {
-    @apply md:flex md:items-center justify-end gap-24 flex-col items-center mt-24 md:mt-0 hidden;
+    @apply md:flex md:items-center justify-end gap-24 items-center mt-24 md:mt-0 hidden;
 
     a {
       @apply text-18 text-black font-semibold uppercase transition-colors;
