@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 687 195" width="400" height="114">
+	<title>LIKEACAR &amp; CO</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-146.575,-139.691,139.689,-146.572,176.124,168.681)">
+			<stop offset="0" stop-color="#f95c32"/>
+			<stop offset="1" stop-color="#f35000"/>
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: #fffbfb } 
+		.s2 { fill: #ffffff } 
+		.t3 { font-size: 59px;line-height: 60px;fill: #010101;font-family: "Canva Sans" } 
+	</style>
+	<path id="Path 6" class="s0" d="m81.8 186.3l-68.7-68.7c-11-11-11-28.8 0-39.8l68.7-68.6c11-11 28.8-11 39.8 0l68.7 68.6c11 11 11 28.9 0 39.8l-68.7 68.7c-11 11-28.8 11-39.8 0z"/>
+	<path id="Path 7" fill-rule="evenodd" class="s1" d="m97.3 61c-8.1 0-14.7 6.6-14.7 14.7 0 8.1 6.6 14.7 14.7 14.7 8.1 0 14.7-6.6 14.7-14.7 0-8.1-6.6-14.7-14.7-14.7zm-11 67.9c5.6 5.6 14.8 5.6 20.4 0l5.3-5.3-22.5-22.5c-5.7-5.6-14.8-5.6-20.5 0l-5.2 5.3z"/>
+	<path id="Path 8" class="s2" d="m139.6 96l-5.3-5.3c-5.6-5.7-14.8-5.7-20.4 0l-32.9 32.9 5.3 5.3c5.6 5.6 14.8 5.6 20.4 0z"/>
+	<text id="LIKEACAR &amp; CO" style="transform: matrix(1,0,0,1,225.98,117.55)" >
+		<tspan x="0" y="0" class="t3">LIKEACAR &amp; CO
+</tspan>
+	</text>
+</svg>

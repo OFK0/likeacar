@@ -1,0 +1,19 @@
+.header {
+  @apply py-16 sticky top-0 border-b border-neutral-50 bg-white z-10;
+
+  &__inner {
+    @apply flex items-center justify-between container mx-auto;
+  }
+
+  &__nav {
+    @apply flex items-center justify-end gap-24;
+
+    a {
+      @apply text-18 text-black font-semibold uppercase transition-colors;
+
+      &:hover {
+        @apply text-primary-500;
+      }
+    }
+  }
+}
