@@ -1,13 +1,13 @@
 import { BackgroundBeams } from '@/components/BackgroundBeams';
 import styles from '@/styles/HomePage.module.scss';
 import classNames from 'classnames/bind';
-import { useTranslations } from 'next-intl';
 import Car3DModel from './components/Car3dModel';
+import { getTranslations } from 'next-intl/server';
 
 const cx = classNames.bind(styles);
 
-export default function Home() {
-  const t = useTranslations();
+export default async function Home() {
+  const t = await getTranslations();
 
   return (
     <div className={cx('homepage')}>
@@ -23,7 +23,7 @@ export default function Home() {
                 gradientText: (chunks) => (
                   <>
                     <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-primary via-primary-400 to-primary-600 py-4 drop-shadow-md">
-                      <span className="">{chunks}</span>
+                      <span>{chunks}</span>
                     </div>
                   </>
                 ),

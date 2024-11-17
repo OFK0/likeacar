@@ -1,6 +1,5 @@
 import { getRequestConfig } from 'next-intl/server';
-import { routing } from './routing';
-import { set } from 'lodash';
+import set from 'lodash/set';
 
 export const locales = ['en', 'de'];
 export const defaultLocale = 'de';
@@ -9,8 +8,8 @@ export const localePrefix = 'as-needed';
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
 
-  if (!locale || !routing.locales.includes(locale as any)) {
-    locale = routing.defaultLocale;
+  if (!locale || !locales.includes(locale as any)) {
+    locale = defaultLocale;
   }
 
   const localeFile = (await import(`@/locales/${locale}.json`)).default;
@@ -20,5 +19,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   return {
     locale,
     messages,
+    onError: () => ({}),
+    getMessageFallback: ({ key }) => key,
   };
 });

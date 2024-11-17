@@ -1,7 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
-import { routing } from './i18n/routing';
+import { localePrefix, locales, defaultLocale } from './i18n/request';
 
-export default createMiddleware(routing);
+export default createMiddleware({ locales, defaultLocale, localePrefix });
 
 export const config = {
   unstable_allowDynamic: ['**/node_modules/lodash/**/*.js'],
