@@ -1,5 +1,5 @@
 .header {
-  @apply py-16 sticky top-0 border-b border-neutral-50 bg-white z-10;
+  @apply py-16 sticky top-0 border-b border-neutral-50 bg-white z-30;
 
   &__inner {
     @apply flex items-center justify-between container mx-auto flex-col md:flex-row;

@@ -1,7 +1,8 @@
 import type { Config } from 'tailwindcss';
+import flowbite from 'flowbite-react/tailwind';
 
 const config: Omit<Config, 'content'> = {
-  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}', flowbite.content()],
   theme: {
     screens: {
       xsm: '576px',
@@ -314,6 +315,7 @@ const config: Omit<Config, 'content'> = {
       },
     },
   },
+  plugins: [flowbite.plugin()],
 };
 
 export default config;

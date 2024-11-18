@@ -5,6 +5,7 @@ import { locales } from '@/i18n/request';
 import { notFound } from 'next/navigation';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
+import Footer from '@/components/Footer';
 
 // If loading a variable font, you don't need to specify the font weight
 const font = Open_Sans({ subsets: ['latin'] });
@@ -35,7 +36,8 @@ export default async function LocaleLayout({
       <html lang={locale}>
         <body className={`${font.className} antialiased`}>
           <Header />
-          {children}
+          <main>{children}</main>
+          <Footer />
         </body>
       </html>
     </NextIntlClientProvider>

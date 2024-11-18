@@ -3,6 +3,7 @@ import styles from './Header.module.scss';
 import Logo from '../Logo';
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 const cx = classNames.bind(styles);
 
@@ -20,6 +21,7 @@ export default function Header() {
           <Link href="/used-cars">{t('menu.used-cars')}</Link>
           <Link href="/repair-service">{t('menu.repair-service')}</Link>
           <Link href="/contact-us">{t('menu.contact-us')}</Link>
+          <LanguageSwitcher />
         </nav>
       </div>
     </header>

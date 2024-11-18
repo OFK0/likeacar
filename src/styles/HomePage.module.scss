@@ -2,22 +2,26 @@
   @apply block;
 
   &__beams-container {
-    @apply block relative h-[calc(100vh-104.25px)];
+    @apply block relative h-[calc(100vh-104.25px)] max-h-[1000px] overflow-hidden;
 
     &__bottom-gradient {
       @apply bg-gradient-to-t from-white to-transparent w-full h-[90px] absolute bottom-0 left-0;
     }
 
+    &__image {
+      @apply w-[40%] h-[120%] absolute left-0 top-0 z-10 bg-[url('/images/car-service-image-2.jpg')] bg-no-repeat bg-cover opacity-35;
+    }
+
     &__content {
-      @apply absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col;
+      @apply absolute top-0 left-0 w-full h-full flex items-end justify-center flex-col box-border pr-40;
     }
 
     &__title {
-      @apply text-black px-16 md:px-0 text-[36px] md:text-64 text-left md:text-center max-w-full md:max-w-[1000px] uppercase font-black relative tracking-tight leading-36 md:leading-[52px];
+      @apply text-black px-16 md:px-0 text-[36px] md:text-64 text-end max-w-full md:max-w-[1000px] uppercase font-black relative tracking-tight leading-36 md:leading-[52px] z-20;
     }
 
     &__car-model {
-      @apply h-[200px] md:h-[600px] w-full -mt-72;
+      @apply h-[200px] md:h-[600px] w-full -mt-72 relative z-20;
     }
   }
 }

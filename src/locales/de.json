@@ -1,8 +1,10 @@
 {
-  "menu.home": "Home",
-  "menu.about-us": "About Us",
-  "menu.used-cars": "Used Cars",
-  "menu.repair-service": "Repair Service",
-  "menu.contact-us": "Contact Us",
-  "homepage.jumbotron-title": "Your service partner for <gradientText>everything to do with cars</gradientText>"
+  "menu.home": "Startseite",
+  "menu.about-us": "Über uns",
+  "menu.used-cars": "Gebrauchtwagen",
+  "menu.repair-service": "Reparaturservice",
+  "menu.contact-us": "Kontakt",
+  "homepage.jumbotron-title": "Ihr Servicepartner für <gradientText>alles rund ums Auto</gradientText>",
+  "languages.de": "German",
+  "languages.en": "English"
 }

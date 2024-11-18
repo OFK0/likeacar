@@ -4,5 +4,7 @@
   "menu.used-cars": "Used Cars",
   "menu.repair-service": "Repair Service",
   "menu.contact-us": "Contact Us",
-  "homepage.jumbotron-title": "Your service partner for <gradientText>everything to do with cars</gradientText>"
+  "homepage.jumbotron-title": "Your service partner for <gradientText>everything to do with cars</gradientText>",
+  "languages.de": "German",
+  "languages.en": "English"
 }

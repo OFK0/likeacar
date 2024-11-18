@@ -14,6 +14,7 @@ export default async function Home() {
       <div className={cx('homepage__beams-container')}>
         <BackgroundBeams />
         <div className={cx('homepage__beams-container__content')}>
+          <div className={cx('homepage__beams-container__image')} />
           <div className={cx('homepage__beams-container__car-model')}>
             <Car3DModel />
           </div>
